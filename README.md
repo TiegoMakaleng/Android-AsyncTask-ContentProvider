@@ -1,4 +1,4 @@
 # Content Provider
 
-This basic project demonstrates how to share application data using a Content Provider.
-It uses AsyncTask to load app data in the background.
+<p>This basic project demonstrates how to share application data using a Content Provider.</p><br />
+<p>It also uses AsyncTask to load app data in the background.</p>
