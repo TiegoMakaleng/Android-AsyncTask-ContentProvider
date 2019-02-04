@@ -16,7 +16,7 @@ import com.app.todos.provider.TaskContract.TaskEntry;
 
 public class MainActivity extends Activity {
 
-    // Member variables for the adapter and RecyclerView
+    // Member variables for the adapter and ListView
     private ListView mRecyclerView;
 
     private Cursor mCursorTasks;
@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        // Set the RecyclerView to its corresponding view
+        // Set the ListView to its corresponding view
         mRecyclerView = (ListView) findViewById(R.id.recyclerViewTasks);
         
         /*
@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
     	mCursorTasks.close();
     }
     
-    public class TasksAsyncTask extends AsyncTask<Void, Void, Cursor>{
+    public class TasksAsyncTask extends AsyncTask<Void, Void, Cursor> {
     	
 		@Override
 		protected Cursor doInBackground(Void... params) {
